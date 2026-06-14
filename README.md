@@ -153,4 +153,5 @@ Relational database tables (users, stores, ratings) showing the successfully sto
     ```
     *The React frontend will load on `http://localhost:5173`.*
 
+
 ---
