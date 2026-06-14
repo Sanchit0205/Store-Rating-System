@@ -62,6 +62,18 @@ Centralized store management list for viewing, sorting, and registering new busi
 
 ---
 
+### 🗄️ Database & API Testing
+
+#### 11. Postman API Testing
+Verification of the backend REST controller endpoints (authentication, user administration, store lists, and rating updates) using Postman API collections.
+![Postman API Testing](Screeshots/PostmanApi.png)
+
+#### 12. PostgreSQL Database
+Relational database tables (users, stores, ratings) showing the successfully stored records and relational schemas in PostgreSQL.
+![PostgreSQL Database](Screeshots/Postgre.png)
+
+---
+
 ## ✨ Key Features
 
 ### 👤 Role-Based Portals
