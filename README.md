@@ -17,22 +17,34 @@ Self-registration page for new users. Stretches to collect names (between 20-60 
 ![Sign Up Page](Screeshots/SignUpPage.png)
 
 ---
+### ⚙️ Admin Management Console
+
+#### 3. Admin Dashboard
+Administrative cockpit displaying system stats (Total registered users, active stores, ratings submitted) on solid-colored high-contrast telemetry cards with decorative depth circles.
+![Admin Dashboard](Screeshots/AdminDashboard.png)
+
+#### 4. Admin Users Section
+Comprehensive list of all registered accounts (users, owners, admins) with custom-styled, role-colored pill badges, search filters, and delete actions.
+![Admin Users Section](Screeshots/AdminUsersSection.png)
+
+#### 5. Admin Stores Section
+Centralized store management list for viewing, sorting, and registering new business locations, mapping owners directly by their user IDs.
+![Admin Stores Section](Screeshots/AdminStoresSection.png)
+
+---
 
 ### 👤 User Store Explorer
 
-#### 3. User Dashboard (UserPage)
+#### 6. User Dashboard (UserPage)
 The main store exploration feed. Displays a personalized taste profile (level XP indicator, achievement badges), search and filter tools, and a grid of interactive cards with Unsplash image integration.
 ![User Dashboard](Screeshots/UserPage.png)
 
-#### 4. Active Comparison Drawer (UserPage2)
-Shows the floating compare shelf appearing at the bottom of the viewport as soon as two or more stores are checked for comparison.
+#### 7. Store Cards Section (UserPage2)
+Displays store cards with store details, overall ratings, and an option for users to submit or update their ratings for each store.
+Each card includes store name, address, rating stars, and an interactive rating option for the user.
 ![Active Comparison Drawer](Screeshots/UserPage2.png)
 
-#### 5. Interactive Store Comparison (StoreCardWithRating)
-The centered feature diff comparison matrix, displaying a side-by-side breakdown of attributes, highlighting differences in amenities (Wi-Fi, parking, outdoor seating), and crowning the highest-rated store with a gold "Best" badge.
-![Store Comparison Modal](Screeshots/StoreCardWithRating.png)
-
-#### 6. Slide-in Password Update Modal (UpdatePassword)
+#### 8. Slide-in Password Update Modal (UpdatePassword)
 Displays the global password slide-in drawer easing in from the right edge of the screen, allowing users to safely update credentials from any page.
 ![Update Password Modal](Screeshots/UpdatePassword.png)
 
@@ -40,35 +52,19 @@ Displays the global password slide-in drawer easing in from the right edge of th
 
 ### 🏪 Store Owner Portal
 
-#### 7. Owner Page
+#### 9. Owner Page
 Dashboard specifically styled for store owners. Features light-blue and light-coral statistics cards, a feedback feed of customer reviews, and response management tools.
 ![Owner Dashboard](Screeshots/OwnerPage.png)
 
 ---
 
-### ⚙️ Admin Management Console
-
-#### 8. Admin Dashboard
-Administrative cockpit displaying system stats (Total registered users, active stores, ratings submitted) on solid-colored high-contrast telemetry cards with decorative depth circles.
-![Admin Dashboard](Screeshots/AdminDashboard.png)
-
-#### 9. Admin Users Section
-Comprehensive list of all registered accounts (users, owners, admins) with custom-styled, role-colored pill badges, search filters, and delete actions.
-![Admin Users Section](Screeshots/AdminUsersSection.png)
-
-#### 10. Admin Stores Section
-Centralized store management list for viewing, sorting, and registering new business locations, mapping owners directly by their user IDs.
-![Admin Stores Section](Screeshots/AdminStoresSection.png)
-
----
-
 ### 🗄️ Database & API Testing
 
-#### 11. Postman API Testing
+#### 10. Postman API Testing
 Verification of the backend REST controller endpoints (authentication, user administration, store lists, and rating updates) using Postman API collections.
 ![Postman API Testing](Screeshots/PostmanApi.png)
 
-#### 12. PostgreSQL Database
+#### 11. PostgreSQL Database
 Relational database tables (users, stores, ratings) showing the successfully stored records and relational schemas in PostgreSQL.
 ![PostgreSQL Database](Screeshots/Postgre.png)
 
@@ -158,8 +154,3 @@ Relational database tables (users, stores, ratings) showing the successfully sto
     *The React frontend will load on `http://localhost:5173`.*
 
 ---
-
-## 🔒 Security & Validation Rules
-1. **Passwords**: Must be 8-16 characters and contain at least one uppercase letter and one special character.
-2. **Owners uniqueness**: A store owner can own a maximum of one store (enforced at both service layer and database schema levels).
-3. **Data Integrity**: Store names and user names require 20 to 60 characters to prevent short spam entries.
