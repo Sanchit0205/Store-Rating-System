@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+:root {
+  --bg: #f7f6fb;
+  --text: #1d1c2b;
+  --muted: #8e8ca8;
+  --line: rgba(0, 0, 0, 0.07);
+  --panel: #ffffff;
+  
+  --primary: #534AB7;
+  --primary-dark: #3f369c;
+  --primary-light: rgba(168, 159, 240, 0.12);
+  
+  --success: #0F6E56;
+  --success-light: #E1F5EE;
+  
+  --rating: #D85A30;
+  --rating-light: #fbeae5;
+  
+  --danger: #993556;
+  --danger-light: #f5e7eb;
+
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+#root {
+  min-height: 100vh;
+}
