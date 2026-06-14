@@ -4,27 +4,61 @@ StoreRate is a premium, feature-rich web application designed to help users disc
 
 ---
 
-## 📸 Application Screenshots
+## 📸 User Interface & Dashboard Gallery
 
-### User Store Explorer & Light Stats Cards
-Discover local shops with dynamic images and track review contributions through light-themed stats cards.
-![User Store Explorer](Screeshots/Screenshot%202026-06-14%20154526.png)
+### 🔐 Authentication Views
 
-### Side-by-Side Store Feature Comparison & Diff
-Check stores to compare them side-by-side. The system highlights the highest-rated store and displays checkmarks and crossmarks indicating differences in amenities (Wi-Fi, parking, outdoor seating).
-![Store Feature Comparison](Screeshots/Screenshot%202026-06-14%20154546.png)
+#### 1. Login Page
+The secure portal interface for users, store owners, and administrators. It features the modern **StoreRate** branding and uses focus shadows.
+![Login Page](Screeshots/LoginPage.png)
 
-### Secure Authentication Panel
-Clean and aesthetic login and registration interface featuring the modern StoreRate branding.
-![Authentication Panel](Screeshots/Screenshot%202026-06-14%20154037.png)
+#### 2. Sign Up Page
+Self-registration page for new users. Stretches to collect names (between 20-60 characters), emails, passwords (with complexity enforcement), and street addresses.
+![Sign Up Page](Screeshots/SignUpPage.png)
 
-### Store Owner Dashboard
-Keep track of reviews, see customer feedback, and view store ratings through light-blue and light-coral statistics cards.
-![Owner Dashboard](Screeshots/Screenshot%202026-06-14%20154643.png)
+---
 
-### Admin Console & User Management
-Comprehensive table view of users and stores, complete with role-colored badges, search filters, and store assignment controls.
-![Admin Console](Screeshots/Screenshot%202026-06-14%20154438.png)
+### 👤 User Store Explorer
+
+#### 3. User Dashboard (UserPage)
+The main store exploration feed. Displays a personalized taste profile (level XP indicator, achievement badges), search and filter tools, and a grid of interactive cards with Unsplash image integration.
+![User Dashboard](Screeshots/UserPage.png)
+
+#### 4. Active Comparison Drawer (UserPage2)
+Shows the floating compare shelf appearing at the bottom of the viewport as soon as two or more stores are checked for comparison.
+![Active Comparison Drawer](Screeshots/UserPage2.png)
+
+#### 5. Interactive Store Comparison (StoreCardWithRating)
+The centered feature diff comparison matrix, displaying a side-by-side breakdown of attributes, highlighting differences in amenities (Wi-Fi, parking, outdoor seating), and crowning the highest-rated store with a gold "Best" badge.
+![Store Comparison Modal](Screeshots/StoreCardWithRating.png)
+
+#### 6. Slide-in Password Update Modal (UpdatePassword)
+Displays the global password slide-in drawer easing in from the right edge of the screen, allowing users to safely update credentials from any page.
+![Update Password Modal](Screeshots/UpdatePassword.png)
+
+---
+
+### 🏪 Store Owner Portal
+
+#### 7. Owner Page
+Dashboard specifically styled for store owners. Features light-blue and light-coral statistics cards, a feedback feed of customer reviews, and response management tools.
+![Owner Dashboard](Screeshots/OwnerPage.png)
+
+---
+
+### ⚙️ Admin Management Console
+
+#### 8. Admin Dashboard
+Administrative cockpit displaying system stats (Total registered users, active stores, ratings submitted) on solid-colored high-contrast telemetry cards with decorative depth circles.
+![Admin Dashboard](Screeshots/AdminDashboard.png)
+
+#### 9. Admin Users Section
+Comprehensive list of all registered accounts (users, owners, admins) with custom-styled, role-colored pill badges, search filters, and delete actions.
+![Admin Users Section](Screeshots/AdminUsersSection.png)
+
+#### 10. Admin Stores Section
+Centralized store management list for viewing, sorting, and registering new business locations, mapping owners directly by their user IDs.
+![Admin Stores Section](Screeshots/AdminStoresSection.png)
 
 ---
 
@@ -70,26 +104,6 @@ Comprehensive table view of users and stores, complete with role-colored badges,
 *   **Vanilla CSS** (Custom token system utilizing the **Inter** system font stack)
 *   **Lucide React** (Modern, clean icon set)
 *   **Vite/Rolldown** build environment
-
----
-
-## ⚙️ Project Structure
-
-```
-Store-Rating-Systems/
-├── backend/                  # Spring Boot REST API
-│   ├── src/main/java/        # Java Source Files
-│   ├── src/main/resources/   # Application properties & config
-│   └── pom.xml               # Maven Dependencies
-└── frontend/                 # React SPA (Vite)
-    ├── src/
-    │   ├── api/              # HTTP Client & endpoints configuration
-    │   ├── components/       # Common layouts & UI elements (AppShell, Stat, DataTable)
-    │   ├── features/         # Feature folders (Auth, User, Owner, Admin)
-    │   ├── styles/           # CSS files (base.css, app.css)
-    │   └── App.jsx           # Main routing & state
-    └── vite.config.js        # Vite config
-```
 
 ---
 
